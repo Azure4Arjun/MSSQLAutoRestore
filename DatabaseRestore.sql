@@ -3,7 +3,7 @@ SET ANSI_NULLS ON;
 GO
 SET QUOTED_IDENTIFIER ON;
 GO
-Create PROCEDURE [dbo].[DatabaseRestoreTest]
+Create PROCEDURE [dbo].[DatabaseRestore]
       @Database NVARCHAR(4000), @RestoreDatabaseName NVARCHAR(MAX)= NULL, @BackupPath NVARCHAR(MAX), @MoveFiles NVARCHAR(MAX)= 'N', @MoveDataDrive NVARCHAR(MAX)= NULL, @MoveLogDrive NVARCHAR(MAX)= NULL, @TestRestore NVARCHAR(MAX)= 'N', @RunCheckDB NVARCHAR(MAX)= 'N', @LogToTable NVARCHAR(MAX)= 'N'
 AS
      BEGIN
